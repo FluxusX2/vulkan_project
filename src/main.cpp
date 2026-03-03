@@ -10,7 +10,7 @@
 
 int main(int argc, char* argv[]) {
     // SDL initialisieren
-    if (SDL_Init(SDL_INIT_VIDEO) < 0) {
+    if (!SDL_Init(SDL_INIT_VIDEO)) {
         std::cerr << "SDL konnte nicht initialisiert werden: " << SDL_GetError() << std::endl;
         return -1;
     }

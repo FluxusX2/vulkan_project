@@ -1,0 +1,41 @@
+# Build-Ordner (CMake Standard)
+build/
+cmake-build-*/
+bin/
+lib/
+
+# CMake generierte Dateien
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# Kompilierte Objekte und Binaries
+*.obj
+*.o
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+*.pdb
+*.ilk
+*.exp
+*.suo
+
+# IDE Konfigurationen (CLion / VSCode / VS)
+.idea/
+.vscode/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# OS spezifisch
+.DS_Store
+Thumbs.db
