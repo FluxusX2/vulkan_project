@@ -27,6 +27,14 @@ int main(int argc, char* argv[]) {
         return -1;
     }
 
+    SDL_Renderer* renderer = SDL_CreateRenderer(window, nullptr);
+
+    SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
+
+    SDL_RenderClear(renderer);
+
+    SDL_RenderPresent(renderer);
+
     // Vulkan Instanz Check
     uint32_t extensionCount = 0;
     const char* const* extensions = SDL_Vulkan_GetInstanceExtensions(&extensionCount);
